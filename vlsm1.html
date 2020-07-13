@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>VLSM-CIDR</title>
+    <link rel='stylesheet' href='vlsm.css' type='text/css' />
+    <script src="validation3.js"></script>
+</head>
+<body onload='document.form1.text1.focus()'>
+    <div id="mainContent">
+        <div class="mail">
+		     <h1>VLSM CALCULATOR<h1>
+            <h2>Input an IP address:</h2>
+            <form name="form1">
+                IP(a.b.c.d/mask):<input type='text' name='text1' value="192.168.1.0/24" /><br><br>
+                No. of networks:<input type="text" id="member" name="member" value="" /><br><br>
+				<div id = "menu">
+				</div>
+                <div id="container">
+                </div>
+                <input type="button" id="numHostBtn" value="Enter the number of hosts" onclick="addFields()">
+                <!--<div id="output"></div>-->
+            </form>
+        </div>
+    </div>
+	<div id='output'>
+	</div>
+	</body>
+</html>
